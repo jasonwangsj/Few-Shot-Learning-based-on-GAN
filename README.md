@@ -14,8 +14,8 @@ Main.py：主函数
     &emsp;&emsp;  step4：分别用源训练集和数据增强后的训练集训练CNN；  
     &emsp;&emsp;  step5：测试上述两个模型在测试集上的分类准确性；  
 # 文件内容说明
-torch_utils, dnnlib：AugmentPipe底层代码，用于Augment.py；
-data：MNIST手写数字数据集和Fashion-MNIST数据集；
-Img：执行Main.py后存储训练过程中的相应图片，包括MNIST手写数字/Fashion-MNIST真实图像、DCGAN训练过程中每轮生成的手写数字/Fashion-MNIST图像、最优DCGAN模型生成的手写数字/Fashion-MNIST图像；  
-model：执行Main.py后存储训练好的模型，包括DCGAN生成器模型(Generator.pt), 小样本数据训练的分类模型(CNN.PT), 扩充数据后训练的分类模型(CNN_reinforce.pt)；
+torch_utils, dnnlib：AugmentPipe底层代码，用于Augment.py；  
+data：MNIST手写数字数据集和Fashion-MNIST数据集；  
+Img：执行Main.py后存储训练过程中的相应图片，包括MNIST手写数字/Fashion-MNIST真实图像、DCGAN训练过程中每轮生成的手写数字/Fashion-MNIST图像、最优DCGAN模型生成的手写数字/Fashion-MNIST图像；   
+model：执行Main.py后存储训练好的模型，包括DCGAN生成器模型(Generator.pt), 小样本数据训练的分类模型(CNN.PT), 扩充数据后训练的分类模型(CNN_reinforce.pt)；  
 注：可在Main.py中修改'dataflag'的值改变使用的数据集，0表示MNIST数据集，1表示Fashion-MNIST数据集。
